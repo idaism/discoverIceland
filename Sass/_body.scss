@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--navFont);
+  // &.navOpen {
+  //   #nav {
+  //     transform: translateX(-0%);
+  //   }
+  //   .wrapper {
+  //     transform: translateX(225px);
+  //   }
+  // }
+}
+
+.wrapper {
+  padding-left: 58px;
+}

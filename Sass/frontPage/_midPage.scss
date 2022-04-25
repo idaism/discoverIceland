@@ -1,0 +1,28 @@
+.midPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  .midInner {
+    display: flex;
+    width: 1650px;
+    height: 900px;
+    background-color: rgba(235, 235, 235, 0.171);
+    .textBox {
+      width: 800px;
+      h2 {
+        font-family: 'Abril Fatface', cursive;
+        letter-spacing: 2px;
+        font-size: 2.2rem;
+      }
+    }
+    .image {
+      img {
+        width: 100%;
+        max-width: 500px;
+        
+      }
+    }
+  }
+}
