@@ -7,16 +7,44 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--navFont);
-  // &.navOpen {
-  //   #nav {
-  //     transform: translateX(-0%);
-  //   }
-  //   .wrapper {
-  //     transform: translateX(225px);
-  //   }
-  // }
+  overflow-x: hidden;
+  &.navOpen {
+    #nav {
+      transform: translateX(-0%);
+      #cross {
+        display: block;
+      }
+      #bars {
+        display: none;
+      }
+      .navTop {
+        &:after {
+          transform: scaleX(1);
+        }
+      }
+      .navList {
+        li {
+          &:hover {
+            background-color: #C3D1DB;
+          }
+        }
+        #destinationsList {
+          &.open {
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+    }
+    .wrapper {
+      transform: translateX(167px);
+    }
+  }
 }
 
 .wrapper {
   padding-left: 58px;
+  transition: 650ms;
 }

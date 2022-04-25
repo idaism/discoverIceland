@@ -10,11 +10,15 @@
     transition: 650ms;
     z-index: 13;
     font-family: 'Roboto', sans-serif;
+    transform: translateX(-167px);
+    box-shadow: 2px 0px 25px -13px rgba(0,0,0,0.21);
+
 
 
     .navTop {
       padding: 13px;
       margin-bottom: 5px;
+      
 
       &::after {
         transition: 950ms;
@@ -28,8 +32,8 @@
         border-right: none;
         border-top: none;
         margin-top: 10px;
-        transform: scaleX(1);
         transform-origin: right;
+        transform: scaleX(0);
       }
 
       #navButton {
@@ -45,6 +49,7 @@
         font-weight: 100;
         z-index: 10;
         transition: 200ms;
+        
         &:hover {
           transform: rotate(90deg);
         }
@@ -186,13 +191,10 @@
         }
       }
     }
-    &.closed {
-      transform: translateX(-75%);
-
       .navTop {
-        &::after {
-          transform: scaleX(0);
-        }
+        // &::after {
+        //   transform: scaleX(0);
+        // }
 
         #navButton {
           .cross {
@@ -227,5 +229,5 @@
           }
         }
       }
-    }
+    
   }
